@@ -42,7 +42,7 @@ app.use((error, req, res, next) => {
 setupWebSocketServer(server);
 //mongoose.set('debug', true);
 //mongoose.set('debug', { color: true });
-mongoose.connect(`${MONGO_URI}/${MONGO_DATABASE}`, {
+mongoose.connect(`${MONGO_URI}`, {
     maxPoolSize: 50
 })
     .then(result => {
